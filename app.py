@@ -8,7 +8,9 @@ from psycopg2 import Error
 
 app = Flask(__name__)
 app.secret_key = 'cairocoders-ednalan'
-conn = psycopg2.connect(dbname="pythondb", user="postgres", password="3008", host="localhost")
+conn = psycopg2.connect(dbname="d73n5mj84ual3h", user="rdafgphauxwref", port="5432",
+password="d374484bc9439592ec0c6541dec1601478e6db4007a671b9f0ae6436d115b2a1", 
+host="ec2-54-75-26-218.eu-west-1.compute.amazonaws.com")
 
 @app.route('/logout')
 def logout():
@@ -72,6 +74,7 @@ def home():
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
+
     if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
         username = request.form['username']
         password = request.form['password']

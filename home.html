@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>BBS</title>
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="static/css/bootstrap.css"> </script>
+		<link rel="stylesheet" href="static/css/style.css">
+
+ <body class="loggedin">
+
+
+ <nav class="site-header sticky-top py-1">
+	 <div class="container d-flex flex-column flex-md-row justify-content-between">
+  <a class="py-2 d-none d-md-inline-block" href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt"></i> Logout</a>
+   </div>
+    </nav>
+	<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+
+
+<style>
+    body {background-color:  #000000}
+    .login {background-color: green}
+     a{color: green;
+ }
+  </style>
+
+	</head>
+
+
+
+
+	 <div class="login">
+
+
+				<br>
+				<br>
+				<br>
+
+				<br>
+
+              <form method="POST">
+
+		<div class="banner-content text-center">
+								<h1 class="text-uppercase">NFT <br> in Solana</h1>
+								<input type="NFT" name="nftaddress" placeholder="nftaddress" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NFT address'" required>
+									<div style="position: absolute; left: -5000px;">
+										<input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
+									</div>
+			                        <button class="btn btn-dark"><span>Get INFO</span></button>
+
+									<div class="info"></div>
+							</div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				  <br>
+				<br>
+				<br>
+				<br>
+
+				<br>
+
+
+
+</form>
+	 </div>
+ </body>
+</html>
